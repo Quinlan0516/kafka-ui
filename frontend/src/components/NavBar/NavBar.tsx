@@ -64,11 +64,11 @@ const NavBar: React.FC<Props> = ({ onBurgerClick }) => {
 
           <S.Hyperlink to="/">
             <Logo />
-            kafbat UI
+            kafka UI
           </S.Hyperlink>
 
           <S.NavbarItem>
-            <Version />
+            v1.1.0
           </S.NavbarItem>
         </S.NavbarBrand>
       </S.NavbarBrand>
@@ -79,21 +79,6 @@ const NavBar: React.FC<Props> = ({ onBurgerClick }) => {
           onChange={setThemeMode}
           isThemeMode
         />
-        <S.SocialLink href="https://github.com/kafbat/kafka-ui" target="_blank">
-          <GitHubIcon />
-        </S.SocialLink>
-        <S.SocialLink
-          href="https://discord.com/invite/4DWzD7pGE5"
-          target="_blank"
-        >
-          <DiscordIcon />
-        </S.SocialLink>
-        <S.SocialLink
-          href="https://producthunt.com/products/ui-for-apache-kafka"
-          target="_blank"
-        >
-          <ProductHuntIcon />
-        </S.SocialLink>
         <UserInfo />
       </S.NavbarSocial>
     </S.Navbar>
